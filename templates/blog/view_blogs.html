@@ -1,0 +1,12 @@
+<h1>This is the view blogs page</h1>
+{% for blog in blogs %}
+    
+    {% if blog.title != "Python" %}
+
+        <h2>{{blog.title}}</h2>
+    {% else %}
+        <h2>Best -> {{blog.title}}</h2>
+    {% endif %}
+
+    <p>{{blog.description}}</p>
+{% endfor %}
