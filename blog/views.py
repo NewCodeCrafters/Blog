@@ -1,11 +1,10 @@
 from django.shortcuts import render
-from .models import BlogModel
 
-# Create your views here.
-
-def view_blogs(request):
-    blogs = BlogModel.objects.all()
+def get_blogs(request):
     context = {
-        'blogs': blogs
+        'fruits': ['Apple', 'Banana', 'Kiwi', 'Mango', 'Watermelon']
     }
-    return render(request, 'blog/view_blogs.html', context)
+    return render(request, 'blog/get_blogs.html', context)
+
+def specific_blogs(request):
+    return render(request, 'blog/specific_blogs.html')

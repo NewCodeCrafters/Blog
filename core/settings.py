@@ -40,7 +40,6 @@ DJANGO_APPS = [
 ]
 
 CUSTOM_APPS = [
-    'member',
     'blog',
 ]
 
