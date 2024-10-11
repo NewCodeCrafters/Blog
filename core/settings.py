@@ -40,12 +40,19 @@ DJANGO_APPS = [
 ]
 
 CUSTOM_APPS = [
-    'blog',
+    'blogs',
 ]
 
-THIRDPARTY_APPS = []
+THIRDPARTY_APPS = [
+    'crispy_forms',
+    'crispy_bootstrap4',
+]
 
 INSTALLED_APPS = DJANGO_APPS + CUSTOM_APPS + THIRDPARTY_APPS
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
+
+CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 
 MIDDLEWARE = [

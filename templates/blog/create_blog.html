@@ -1,0 +1,9 @@
+{% include "../base.html" %}
+
+{% block content %}
+<form action"" method="post">
+    {% csrf_token %}
+    {{form}}
+    <button type="submit">Create Form</button>
+</form>
+{% endblock content %} 
